@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductHubNepal | Genuine Electronics Delivered in Nepal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                ProductHub<span>Nepal</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <a href="shop.html" class="btn-header-shop">Shop now</a>
+                <button class="mobile-menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <!-- Hero Left: Content & Search -->
+                <div class="hero-content">
+                    <div class="pill-badge">
+                        <span class="pill-dot"></span>
+                        Free delivery inside Kathmandu Valley
+                    </div>
+                    <h1 class="hero-title">Genuine electronics.<br><span>Delivered</span> in Nepal.</h1>
+                    <p class="hero-description">
+                        From flagship phones to pro cameras — hand-picked, warranty-backed, and one WhatsApp message away. No cart. No checkout drama.
+                    </p>
+                    
+                    <!-- Interactive Search Bar -->
+                    <div class="search-wrapper">
+                        <div class="search-input-container">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" class="search-input" id="heroSearchInput" placeholder="Search iPhones, MacBooks, Sony headphones...">
+                            <button class="search-clear-btn" id="searchClearBtn"><i class="fa-solid fa-xmark"></i></button>
+                            <button class="search-action-btn" id="searchActionBtn">Search</button>
+                        </div>
+                        <!-- Suggestions Dropdown -->
+                        <div class="search-suggestions-dropdown" id="searchSuggestions">
+                            <!-- Injected dynamically by JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="shop.html" class="btn-black">Browse products <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://wa.me/9779840921600" target="_blank" class="btn-outline">Chat on WhatsApp</a>
+                    </div>
+                    
+                    <div class="hero-stats-divider"></div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>5k+</h3>
+                            <p>Happy customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Genuine stock</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>WhatsApp support</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Right: Interactive Spotlight Carousel -->
+                <div class="hero-carousel-container" id="heroCarousel">
+                    <!-- Carousel Slides injected by JS -->
+                    <button class="carousel-btn carousel-btn-left" id="carouselPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-btn carousel-btn-right" id="carouselNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="carousel-indicators" id="carouselIndicators">
+                        <!-- Dots injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Editor's Picks (Featured) Section -->
+        <section class="container section-padding">
+            <div class="section-header">
+                <div>
+                    <div class="section-label">Featured</div>
+                    <h2 class="section-title">Editor's picks</h2>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-top: 4px;">The gear we're recommending this month.</p>
+                </div>
+                <a href="shop.html" class="section-link">View all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="products-grid" id="editorsPicksGrid">
+                <!-- Injected dynamically by JS -->
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="container section-padding" style="border-top: 1px solid var(--border-light);">
+            <div class="section-header">
+                <div>
+                    <div class="section-label">Categories</div>
+                    <h2 class="section-title">Shop by category</h2>
+                </div>
+            </div>
+            
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Injected dynamically by JS -->
+            </div>
+        </section>
+
+        <!-- Latest Arrivals Section -->
+        <section class="container section-padding" style="border-top: 1px solid var(--border-light);">
+            <div class="section-header">
+                <div>
+                    <div class="section-label">Latest Arrivals</div>
+                    <h2 class="section-title">Just landed in stock</h2>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="latestArrivalsGrid">
+                <!-- Injected dynamically by JS -->
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section class="container section-padding" style="border-top: 1px solid var(--border-light);">
+            <div class="section-header">
+                <div>
+                    <div class="section-label">Why Us</div>
+                    <h2 class="section-title">Small shop, big standards</h2>
+                </div>
+            </div>
+            
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>100% Authentic</h3>
+                    <p>Sourced from official channels only. Rest assured, you'll receive genuine items with box and manual papers intact.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Warranty-backed</h3>
+                    <p>Every electronic piece is backed by our direct shop support in addition to standard manufacturer brand warranties.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>Fast delivery</h3>
+                    <p>We pack and ship the same-day. Receive swift, hand-delivered packages inside Kathmandu Valley within a few hours.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Real humans</h3>
+                    <p>Talk to us on WhatsApp anytime. No chat bots or automated messaging pipelines — just honest advice from tech enthusiasts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="container section-padding" style="border-top: 1px solid var(--border-light);">
+            <div class="section-header">
+                <div>
+                    <div class="section-label">Reviews</div>
+                    <h2 class="section-title">Loved across Nepal</h2>
+                </div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "ordered a macbook air on WhatsApp at 10pm — got a reply in minutes and delivery next morning. Legit shop."
+                    </p>
+                    <div class="review-author">Aayush R.</div>
+                    <div class="review-location">Lalitpur</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "genuine sony headphones, sealed box, warranty card intact. prices are fair. will buy again."
+                    </p>
+                    <div class="review-author">Sneha M.</div>
+                    <div class="review-location">Pokhara</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "the team helped me pick between two phones over chat. no pressure, actual advice. rare these days."
+                    </p>
+                    <div class="review-author">Rajan T.</div>
+                    <div class="review-location">Kathmandu</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="container cta-section">
+            <div class="cta-container">
+                <h2>Not sure what to buy?</h2>
+                <p>Tell us your budget and use case. We'll recommend the right device — no upselling, no BS.</p>
+                <a href="https://wa.me/9779840921600?text=Hello%20ProductHubNepal%2C%20I%27m%20looking%20for%20some%20device%20recommendations.%20My%20budget%20is%20..." target="_blank" class="btn-cta-whatsapp">
+                    message us on whatsapp <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                        ProductHub<span>Nepal</span>
+                    </a>
+                    <p>Nepal's trusted destination for genuine electronics — delivered with care, backed by warranty.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+977 9840921600</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@producthubnepal.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Road, Kathmandu, Nepal</span>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Order via WhatsApp</h4>
+                    <p style="font-size: 13px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">
+                        skip the cart. message us and we'll confirm availability, price and delivery right away.
+                    </p>
+                    <a href="https://wa.me/9779840921600" target="_blank" class="btn-footer-chat">
+                        <i class="fa-brands fa-whatsapp"></i> Chat now
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ProductHubNepal. All rights reserved.</p>
+                <p>Made in Kathmandu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specs Matrix | Details - ProductHubNepal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header scrolled" id="mainHeader">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                ProductHub<span>Nepal</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <a href="shop.html" class="btn-header-shop">Shop now</a>
+                <button class="mobile-menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container product-detail-layout">
+        <!-- Product Image -->
+        <div class="main-image-container">
+            <img id="mainProductImg" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'></svg>" alt="Loading...">
+        </div>
+        
+        <!-- Product Details Info -->
+        <div class="product-detail-info">
+            <div class="detail-cat" id="productCategory">Category</div>
+            <h1 class="detail-title" id="productTitle">Loading Specifications...</h1>
+            
+            <div class="detail-rating">
+                <div class="rating-stars" id="productRatingStars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="rating-count" id="productReviewsCount">(0 reviews)</div>
+            </div>
+            
+            <div class="detail-price" id="productPrice">NPR 0</div>
+            
+            <p class="detail-desc" id="productDescription">
+                Retrieving genuine product metadata from core warehouse array...
+            </p>
+            
+            <button id="whatsappOrderBtn" class="detail-btn-order">
+                <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i> Order on WhatsApp
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                        ProductHub<span>Nepal</span>
+                    </a>
+                    <p>Nepal's trusted destination for genuine electronics — delivered with care, backed by warranty.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+977 9840921600</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@producthubnepal.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Road, Kathmandu, Nepal</span>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Order via WhatsApp</h4>
+                    <p style="font-size: 13px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">
+                        skip the cart. message us and we'll confirm availability, price and delivery right away.
+                    </p>
+                    <a href="https://wa.me/9779840921600" target="_blank" class="btn-footer-chat">
+                        <i class="fa-brands fa-whatsapp"></i> Chat now
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ProductHubNepal. All rights reserved.</p>
+                <p>Made in Kathmandu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/whatsapp.js"></script>
+</body>
+</html>

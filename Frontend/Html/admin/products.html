@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assets Control Ledger</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <main class="admin-main-content">
+            <div class="glass-panel" style="padding:20px; display:flex; justify-content:space-between;">
+                <h2>Core Inventory Arrays</h2>
+                <a href="add-product.html" class="btn btn-primary">Append Asset</a>
+            </div>
+            <div class="glass-panel" style="margin-top:20px; padding:20px;">
+                <table style="width:100%; color:#fff;">
+                    <thead><tr><th>ID</th><th>Asset Identifier</th><th>Actions</th></tr></thead>
+                    <tbody><tr><td>001</td><td>ProBook Ultra X15</td><td><button onclick="confirmDelete(1)">Purge</button></td></tr></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="../../js/admin.js"></script>
+</body>
+</html>

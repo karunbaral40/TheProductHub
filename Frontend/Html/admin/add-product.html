@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Append Data Node</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="container" style="max-width:600px; padding-top:40px;">
+        <div class="glass-panel" style="padding:40px;">
+            <h3>Serialize New Asset Node</h3>
+            <form action="/api/admin/products" method="POST">
+                <div class="input-group"><label>Asset Label</label><input type="text" name="title" required></div>
+                <div class="input-group"><label>Price Metric</label><input type="number" name="price" required></div>
+                <button type="submit" class="btn btn-primary">Commit To Relational Table</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
