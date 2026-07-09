@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specs Matrix | Details - ProductHubNepal</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Explore Inventory | Shop - ProductHubNepal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,7 +20,7 @@
             
             <nav class="nav-menu" id="navMenu">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
@@ -34,38 +34,41 @@
         </div>
     </header>
 
-    <main class="container product-detail-layout">
-        <!-- Product Image -->
-        <div class="main-image-container">
-            <img id="mainProductImg" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'></svg>" alt="Loading...">
-        </div>
-        
-        <!-- Product Details Info -->
-        <div class="product-detail-info">
-            <div class="detail-cat" id="productCategory">Category</div>
-            <h1 class="detail-title" id="productTitle">Loading Specifications...</h1>
-            
-            <div class="detail-rating">
-                <div class="rating-stars" id="productRatingStars">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+    <main class="container shop-layout">
+        <!-- Sidebar Filters -->
+        <aside class="shop-sidebar">
+            <div class="sidebar-section">
+                <h3>Search Catalog</h3>
+                <div class="search-input-container" style="padding: 2px 4px 2px 14px;">
+                    <input type="text" id="shopSearchInput" class="search-input" placeholder="Type to filter..." style="padding: 6px 0; font-size: 14px;">
                 </div>
-                <div class="rating-count" id="productReviewsCount">(0 reviews)</div>
             </div>
-            
-            <div class="detail-price" id="productPrice">NPR 0</div>
-            
-            <p class="detail-desc" id="productDescription">
-                Retrieving genuine product metadata from core warehouse array...
-            </p>
-            
-            <button id="whatsappOrderBtn" class="detail-btn-order">
-                <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i> Order on WhatsApp
-            </button>
-        </div>
+
+            <div class="sidebar-section">
+                <h3>Categories</h3>
+                <div class="filter-group">
+                    <label class="filter-checkbox"><input type="checkbox" id="filterAll" value="all" checked> All categories</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="category" value="smartphones"> Smartphones</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="category" value="laptops"> Laptops</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="category" value="audio"> Audio</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="category" value="wearables"> Wearables</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="category" value="cameras"> Cameras</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="category" value="televisions"> Televisions</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="category" value="gaming"> Gaming</label>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Max Price Limit</h3>
+                <input type="range" id="priceRange" min="5000" max="300000" step="5000" value="300000" class="price-slider">
+                <div class="price-labels"><span id="currentPriceLabel">Max: NPR 300,000</span></div>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="products-grid" id="shopProductsGrid">
+            <!-- Injected dynamically by JS -->
+        </section>
     </main>
 
     <!-- Footer -->
@@ -124,8 +127,8 @@
         </div>
     </footer>
 
-    <script src="../js/products.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/whatsapp.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

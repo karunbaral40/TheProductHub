@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operational Values | About Us - ProductHubNepal</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Specs Matrix | Details - ProductHubNepal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -21,7 +21,7 @@
             <nav class="nav-menu" id="navMenu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="shop.html" class="nav-link">Shop</a>
-                <a href="about.html" class="nav-link active">About</a>
+                <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
             
@@ -34,19 +34,37 @@
         </div>
     </header>
 
-    <main class="container section-padding" style="padding-top: 160px; padding-bottom: 80px;">
-        <div style="background: #fff; border: 1px solid var(--border-light); border-radius: 24px; padding: 60px; text-align: center; max-width: 800px; margin: 0 auto; box-shadow: var(--shadow-sm);">
-            <div class="why-icon" style="margin-bottom: 24px; width: 64px; height: 64px; font-size: 28px;"><i class="fa-solid fa-seedling"></i></div>
-            <h2 style="font-family: var(--font-outfit); font-size: 32px; color: var(--text-main); margin-bottom: 20px;">The Story of ProductHubNepal</h2>
-            <p style="color: var(--text-muted); font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
-                We are a small team of passionate tech enthusiasts based in Kathmandu, Nepal. Frustrated by the complexities of typical online shopping carts, delivery delays, and grey-market imports, we built ProductHubNepal.
+    <main class="container product-detail-layout">
+        <!-- Product Image -->
+        <div class="main-image-container">
+            <img id="mainProductImg" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'></svg>" alt="Loading...">
+        </div>
+        
+        <!-- Product Details Info -->
+        <div class="product-detail-info">
+            <div class="detail-cat" id="productCategory">Category</div>
+            <h1 class="detail-title" id="productTitle">Loading Specifications...</h1>
+            
+            <div class="detail-rating">
+                <div class="rating-stars" id="productRatingStars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="rating-count" id="productReviewsCount">(0 reviews)</div>
+            </div>
+            
+            <div class="detail-price" id="productPrice">NPR 0</div>
+            
+            <p class="detail-desc" id="productDescription">
+                Retrieving genuine product metadata from core warehouse array...
             </p>
-            <p style="color: var(--text-muted); font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
-                We work directly with authorized distributors and reliable international importers to source 100% genuine electronics: from the latest iPhones and MacBooks to studio-grade headphones, cameras, and gaming consoles.
-            </p>
-            <p style="color: var(--text-muted); font-size: 16px; line-height: 1.8;">
-                By combining conversational order processes on WhatsApp with swift, hand-delivered shipping, we guarantee a premium hardware checkout experience. No cart delays. No checkout drama. Just authentic tech assets in your hands.
-            </p>
+            
+            <button id="whatsappOrderBtn" class="detail-btn-order">
+                <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i> Order on WhatsApp
+            </button>
         </div>
     </main>
 
@@ -106,7 +124,8 @@
         </div>
     </footer>
 
-    <script src="../js/products.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/whatsapp.js"></script>
 </body>
 </html>

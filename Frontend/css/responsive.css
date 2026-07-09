@@ -36,6 +36,12 @@
     .reviews-grid {
         grid-template-columns: 1fr;
     }
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -92,5 +98,14 @@
     }
     .carousel-indicators {
         bottom: 120px;
+    }
+    .contact-layout {
+        padding-top: 100px;
+        padding-bottom: 40px;
+        gap: 24px;
+    }
+    .contact-card-form, .contact-info-card {
+        padding: 24px;
+        border-radius: 20px;
     }
 }

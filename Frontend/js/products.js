@@ -7,7 +7,7 @@ const ProductHubState = {
             price: 215000,
             rating: 5,
             reviewsCount: 32,
-            image: "../assets/iphone_15_pro.jpg",
+            image: "assets/iphone_15_pro.jpg",
             description: "titanium build, pro-level cameras.",
             tag: "NEW"
         },
@@ -18,7 +18,7 @@ const ProductHubState = {
             price: 185000,
             rating: 5,
             reviewsCount: 24,
-            image: "../assets/macbook_air_m3.jpg",
+            image: "assets/macbook_air_m3.jpg",
             description: "thin, silent, and incredibly fast with the M3 chip.",
             tag: ""
         },
@@ -29,7 +29,7 @@ const ProductHubState = {
             price: 48500,
             rating: 5,
             reviewsCount: 41,
-            image: "../assets/sony_wh_1000xm5.jpg",
+            image: "assets/sony_wh_1000xm5.jpg",
             description: "industry-leading noise cancelling headphones.",
             tag: ""
         },
@@ -40,7 +40,7 @@ const ProductHubState = {
             price: 195000,
             rating: 5,
             reviewsCount: 15,
-            image: "../assets/lg_oled_c3.jpg",
+            image: "assets/lg_oled_c3.jpg",
             description: "self-lit OLED pixels, alpha9 AI processor gen6.",
             tag: "SOLD OUT"
         },
@@ -51,7 +51,7 @@ const ProductHubState = {
             price: 82000,
             rating: 5,
             reviewsCount: 18,
-            image: "../assets/ps5_slim.jpg",
+            image: "assets/ps5_slim.jpg",
             description: "next-gen gaming, slimmer design, 1TB storage.",
             tag: "NEW"
         },

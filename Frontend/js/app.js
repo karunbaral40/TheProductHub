@@ -57,7 +57,7 @@ function initializeHeroCarousel() {
             title: "Premium Tech Assets",
             desc: "Converged flagship inventory systems inside Nepal.",
             price: "NPR 15.5K - 2.15L",
-            image: "../assets/hero_showcase.jpg",
+            image: "assets/hero_showcase.jpg",
             url: "shop.html"
         },
         {
