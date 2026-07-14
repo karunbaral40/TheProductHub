@@ -93,7 +93,7 @@ const ProductHubState = {
     countryPrefix: "977",
     generateWhatsAppUrl: function(productName, productPrice) {
         const formattedPrice = typeof productPrice === 'number' ? `Rs. ${productPrice.toLocaleString()}` : productPrice;
-        const message = `Hello ProductHubNepal,\n\nI want to order this product.\n\nProduct: ${productName}\nPrice: ${formattedPrice}\n\nIs it available?`;
+        const message = `Hello TheProductHub,\n\nI want to order this product.\n\nProduct: ${productName}\nPrice: ${formattedPrice}\n\nIs it available?`;
         return `https://wa.me/${this.countryPrefix}${this.phoneConfiguration}?text=${encodeURIComponent(message)}`;
     }
 };

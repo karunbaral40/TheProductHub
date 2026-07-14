@@ -36,7 +36,7 @@ function populateProductDetails() {
 
     // 3. Populate page contents
     titleEl.textContent = product.title;
-    document.title = `${product.title} | Details - ProductHubNepal`;
+    document.title = `${product.title} | Details - TheProductHub`;
 
     const formattedPrice = typeof product.price === 'number' ? `NPR ${product.price.toLocaleString()}` : product.price;
     priceEl.textContent = formattedPrice;
